@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
             .setNotifyExecutor(MainThreadExecutor())
             .build()
         adapter.submitList(pagedList)
+
+        dataSource.invalidate()
     }
 
 }
